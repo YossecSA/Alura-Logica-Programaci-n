@@ -2,7 +2,7 @@
 let numeroSecreto = 7;
 let numeroUsuario = 0;
 let intentos = 1;
-let palabraVeces = "vez";
+//let palabraVeces = "vez";
 let maximoIntentos = 3;
 
 while (numeroUsuario != numeroSecreto) {
@@ -15,7 +15,9 @@ while (numeroUsuario != numeroSecreto) {
     if (numeroUsuario == numeroSecreto) {
         //Acertamos, fue verdadero la condicion
         alert(
-            `Acertaste, el número es: ${numeroUsuario}. Lo hiciste en  ${intentos} ${palabraVeces} `
+            `Acertaste, el número es: ${numeroUsuario}. Lo hiciste en  ${intentos} ${
+                intentos == 1 ? "vez" : "veces"
+            } `
         );
     } else {
         if (numeroUsuario > numeroSecreto) {
@@ -27,7 +29,7 @@ while (numeroUsuario != numeroSecreto) {
         //intentos += 1;
         intentos++;
 
-        palabraVeces = "veces";
+        //palabraVeces = "veces";
 
         if (intentos > maximoIntentos) {
             alert(`Llegaste al maximo de ${maximoIntentos} intentos`);
