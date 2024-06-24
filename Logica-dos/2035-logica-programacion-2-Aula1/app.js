@@ -39,13 +39,15 @@ function verificarIntento() {
 }
 
 function reiniciarJuego() {
-    //limpiar la caja
+    //limpiar caja
     limpiarCaja();
-    //Indicar mensaje de intervalos de numeros
-    mensajesIniciales();
-
-    //desabilitar el boton de nuevo juego
-    document.querySelector("#reiniciar").setAttribute("disabled", "true");
+    //Indicar mensaje de intervalo de números 
+    //Generar el número aleatorio
+    //Inicializar el número intentos
+    condicionalesIniciales();
+    //Deshabilitar el botón de nuevo juego
+    document.querySelector('#reiniciar').setAttribute('disabled','true');
+    
 }
 
 function condicionalesIniciales() {
